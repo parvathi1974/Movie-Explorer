@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ movie.Title }}</title>
+</head>
+<body>
+    <h1>{{ movie.Title }}</h1>
+    <img src="{{ movie.Poster }}" alt="{{ movie.Title }}" width="200">
+    <p><strong>Year:</strong> {{ movie.Year }}</p>
+    <p><strong>Genre:</strong> {{ movie.Genre }}</p>
+    <p><strong>Plot:</strong> {{ movie.Plot }}</p>
+    <p><strong>Director:</strong> {{ movie.Director }}</p>
+    <p><strong>IMDB Rating:</strong> {{ movie.imdbRating }}</p>
+    <a href="{% url 'home' %}">Back to Home</a>
+</body>
+</html>
